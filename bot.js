@@ -5,9 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', function(message) {
-        // Don't forget to log the message!
-        message.sendMessage(message.channel, "Hello!");
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
