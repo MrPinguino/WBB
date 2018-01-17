@@ -10,7 +10,13 @@ client.on('message', message => {
         message.delete()
     	message.reply('Pong!')
   	}
+    if (msg.includes('LETTUCE')) {
+        message.delete()
+        message.author.send('hy')
+    }
 });
+
+if
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
