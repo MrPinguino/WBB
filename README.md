@@ -1,0 +1,2 @@
+# WBB
+discord WBB bot
