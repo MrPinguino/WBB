@@ -7,7 +7,6 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-        message.delete(1000);
     	message.reply('pong');
   	}
 });
