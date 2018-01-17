@@ -7,8 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-        message.reply('pong');
-    message.author.reply('sdfda');
+    	message.reply('pong');
   	}
 });
 
