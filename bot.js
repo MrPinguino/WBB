@@ -8,11 +8,11 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'ping') {
         message.delete()
-    	message.reply('Pong!')
+    	message.reply('Pong!');
   	}
     if (msg.includes('LETTUCE')) {
         message.delete()
-        message.author.send('hy')
+        message.author.send('hy');
     }
 });
 
