@@ -12,7 +12,7 @@ client.on('message', message => {
   	}
 });
 
-if (msg.includes('LETTUCE')) {
+client.on(msg.includes('LETTUCE')) {
     message.delete()
     message.author.send('You are Not allowed to user the word **Lettuce**!')
 }
