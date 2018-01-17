@@ -12,5 +12,11 @@ client.on('message', message => {
   	}
 });
 
+if (msg.includes('LETTUCE')) {
+    message.delete()
+    message.author.send('You are Not allowed to user the word **Lettuce**!')
+}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
