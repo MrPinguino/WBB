@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', function(message) {
         // Don't forget to log the message!
-        client.sendMessage(message.channel, "Hello!");
+        message.sendMessage(message.channel, "Hello!");
 });
 
 // THIS  MUST  BE  THIS  WAY
