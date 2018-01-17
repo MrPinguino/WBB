@@ -11,5 +11,10 @@ client.on('message', message => {
   	}
 });
 
+if (msg.includes('LETTUCE')) {
+    message.delete();
+    message.author.send('The wprd **Lettuce** is banned, Please don\'t user it!')
+}
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
